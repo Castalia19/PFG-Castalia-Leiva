@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "347496695064",
+    "project_id": "wrist-movement-and-hand-grip",
+    "storage_bucket": "wrist-movement-and-hand-grip.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:347496695064:android:e47ed2d85f996f0818ca6d",
+        "android_client_info": {
+          "package_name": "com.example.wraistrehab"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJGXAI8ZmYyQLdBGeW8MYTD7eFqfJlEvQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

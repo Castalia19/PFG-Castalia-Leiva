@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fuerza"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu">
+
+    <TextView
+        android:id="@+id/text_string"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Elija la posición del resorte:"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/nivel1_btn"
+        style="@android:style/Widget.Button"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="16dp"
+        android:text="1"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:background="@drawable/selector_button"
+        app:layout_constraintEnd_toStartOf="@+id/nivel2_btn"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_string" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/nivel2_btn"
+        style="@android:style/Widget.Button"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="16dp"
+        android:text="2"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:background="@drawable/selector_button"
+        app:layout_constraintEnd_toStartOf="@+id/nivel3_btn"
+        app:layout_constraintStart_toEndOf="@+id/nivel1_btn"
+        app:layout_constraintTop_toBottomOf="@+id/text_string" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/nivel3_btn"
+        style="@android:style/Widget.Button"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="16dp"
+        android:text="3"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:background="@drawable/selector_button"
+        app:layout_constraintEnd_toStartOf="@+id/nivel4_btn"
+        app:layout_constraintStart_toEndOf="@+id/nivel2_btn"
+        app:layout_constraintTop_toBottomOf="@+id/text_string" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/nivel4_btn"
+        style="@android:style/Widget.Button"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="16dp"
+        android:text="4"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:background="@drawable/selector_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/nivel3_btn"
+        app:layout_constraintTop_toBottomOf="@+id/text_string" />
+
+    <TextView
+        android:id="@+id/text_repetition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Indique el número de repeticiones:"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/nivel1_btn"
+        app:layout_constraintBottom_toTopOf="@+id/editTextText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="299dp"
+        android:layout_height="85dp"
+        android:ems="10"
+        android:digits="1234567890"
+        android:inputType="number"
+        android:maxLength="9"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_repetition" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button"
+        android:layout_width="140dp"
+        android:layout_height="63dp"
+        android:text="Aceptar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText"
+        style="@android:style/Widget.Button"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

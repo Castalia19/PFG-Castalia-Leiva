@@ -1,0 +1,5 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#9addfb" /> <!-- Color de fondo cuando está seleccionado -->
+    <corners android:radius="8dp" /> <!-- Radio de las esquinas -->
+    <stroke android:width="2dp" android:color="#AAAAAA" /> <!-- Borde del botón -->
+</shape>

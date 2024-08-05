@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fuerzajuego"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu">
+
+    <ImageView
+        android:id="@+id/background_fuerza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_fuerza"
+        android:scaleX="1"
+        android:scaleY="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <!--Movimiento máximo hasta 342-->
+
+    <ImageView
+        android:id="@+id/manija"
+        android:layout_width="800dp"
+        android:layout_height="600dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="175dp"
+        android:src="@drawable/manija"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/bomba"
+        android:layout_width="800dp"
+        android:layout_height="600dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="150dp"
+        android:src="@drawable/bomba"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/globo_explotando"
+        android:layout_width="650dp"
+        android:layout_height="650dp"
+        android:layout_marginStart="590dp"
+        android:src="@drawable/globo6"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/globo0"
+        android:layout_width="650dp"
+        android:layout_height="650dp"
+        android:layout_marginStart="590dp"
+        android:src="@drawable/globo0"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/globo5"
+        android:layout_width="650dp"
+        android:layout_height="650dp"
+        android:layout_marginStart="590dp"
+        android:src="@drawable/globo5"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/globo4"
+        android:layout_width="650dp"
+        android:layout_height="650dp"
+        android:layout_marginStart="590dp"
+        android:src="@drawable/globo4"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/globo3"
+        android:layout_width="650dp"
+        android:layout_height="650dp"
+        android:layout_marginStart="590dp"
+        android:src="@drawable/globo3"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/globo2"
+        android:layout_width="650dp"
+        android:layout_height="650dp"
+        android:layout_marginStart="590dp"
+        android:src="@drawable/globo2"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/globo1"
+        android:layout_width="650dp"
+        android:layout_height="650dp"
+        android:layout_marginStart="590dp"
+        android:src="@drawable/globo1"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/button_play"
+        android:layout_width="180dp"
+        android:layout_height="162dp"
+        android:background="@drawable/button_selected_background"
+        android:scaleType="fitCenter"
+        android:src="@drawable/play_buttom"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.456"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.465" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/button_rst"
+        android:layout_width="180dp"
+        android:layout_height="162dp"
+        android:background="@drawable/button_selected_background"
+        android:scaleType="fitCenter"
+        android:src="@drawable/restar_icon"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.456"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.465" />
+
+    <TextView
+        android:id="@+id/dataTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Esperando datos..."
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/countTextView" />
+
+    <TextView
+        android:id="@+id/repetitionsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Repeticiones máximas: "
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectedLevelTextView" />
+
+    <TextView
+        android:id="@+id/countTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Repeticiones: "
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@+id/repetitionsTextView"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/selectedLevelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nivel seleccionado: "
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/boolTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Indice: "
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dataTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
