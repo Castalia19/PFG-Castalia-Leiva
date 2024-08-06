@@ -17,10 +17,10 @@ float L1 = 0.01525;                  // Longitud del potenciómetro la posición
 float L2 = 0.02092;                  // Longitud del potenciómetro la posición del resorte 1.
 float L3 = 0.02885;                  // Longitud del potenciómetro la posición del resorte 1.
 float L4 = 0.03832;                  // Longitud del potenciómetro la posición del resorte 1.
-float ref_ang_resorte1 = 144.39; // Ángulo de referencia del inicio del resorte 1 en posición 1.
-float ref_ang_resorte2 = 137.46; // Ángulo de referencia del inicio del resorte 1 en posición 2.
-float ref_ang_resorte3 = 153.44; // Ángulo de referencia del inicio del resorte 2 en posición 3.
-float ref_ang_resorte4 = 143.59; // Ángulo de refer57.28encia del inicio del resorte 2 en posición 4.
+float ref_ang_resorte1 = 159.30; // Ángulo de referencia del inicio del resorte 1 en posición 1.
+float ref_ang_resorte2 = 147.85; // Ángulo de referencia del inicio del resorte 1 en posición 2.
+float ref_ang_resorte3 = 164.10; // Ángulo de referencia del inicio del resorte 2 en posición 3.
+float ref_ang_resorte4 = 152.38; // Ángulo de refer57.28encia del inicio del resorte 2 en posición 4.
 float ang_res;                  // Variable para identificar el desplazamiento del resorte.
 float fuerza = 0;               // Fuerza de agarre, obtenida al variar el potenciómetro 3 dependiendo del resorte utilizado.
 
@@ -99,5 +99,6 @@ void loop() {
     bluetoothSerial.print("/"); // Delimitador
     bluetoothSerial.println(String(ang_abad)); // Segundo dato
   }
+  Serial.println(fuerza);
   delay(200); // Pequeña pausa para evitar lecturas demasiado rápidas
 }
